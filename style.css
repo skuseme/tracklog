@@ -1,0 +1,41 @@
+:root {
+    --topbarheight: 38px; 
+    --botbarheight: 0px;
+}
+
+*{
+	border-radius: 0 !important;
+}
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.pusher{
+	height: 100%;
+}
+#map_canvas {
+	width: 100%;
+	height: calc(100% - var(--topbarheight) - var(--botbarheight));
+}
+#graphs{
+	height: var(--botbarheight));
+}
+#altitude_canvas {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#speed_canvas {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+#topbar {
+	width: 100%;
+	height: var(--topbarheight);
+}
